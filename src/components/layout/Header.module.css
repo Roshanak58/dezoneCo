@@ -1,0 +1,74 @@
+.header{
+    direction: rtl;
+  background: #0c388d;
+  /* padding: 15px 25px; */
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 130px;
+  flex-wrap: wrap; /* برای ریسپانسیو */
+   position: relative;
+   border-radius: 10px;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    flex-wrap: nowrap;     /* جلوگیری از رفتن به خط بعد */
+}
+.rightSection img {
+  flex-shrink: 0;
+}
+.siteInfo {
+  min-width: 0;
+  font-size: 14px;
+}
+.siteInfo p{
+    direction: ltr;
+}
+.centerSection {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-grow: 1;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 90px;
+}
+.leftSection{
+    direction: ltr;
+    padding-left: 25px;
+    font-size: small;
+}
+@media (max-width: 950px) {
+.header{
+        height: 90px;
+ }
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+    flex-wrap: nowrap;     /* جلوگیری از رفتن به خط بعد */
+}
+.rightSection img {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+.siteInfo {
+  font-size: x-small;
+}
+.leftSection{
+    direction: ltr;
+    padding-left: 5px;
+    font-size: x-small;
+} 
+.centerSection {
+  justify-content: flex-start;
+  z-index: 999;
+}
+}
+

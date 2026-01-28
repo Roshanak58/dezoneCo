@@ -1,0 +1,72 @@
+ .sliderContainer {
+  position: relative;
+  width: 100%;
+  height:400px;         /* موبایل */
+   /* overflow-x: hidden;
+  overflow-y: visible; */
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  
+  
+  
+}
+.slideTitle {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  transform: translateY(-50%);
+  z-index: 7; /* حتماً بالاتر از wave */
+
+  color: #507fcb;
+  /* background: rgba(0, 0, 0, 0.45); */
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.slider{
+  width: 100%;
+  height: 100vh;
+   
+  max-width: 1200px;
+    /* margin: 0 auto; */
+  /* margin-top: 10px; */
+  /* padding-top: 10px; */
+  
+}
+
+.slide {
+
+   border-radius: 10px;
+    overflow: hidden;
+  position: relative;
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  height:400px;
+  background: #000; /* برای فضای خالی بالا/پایین */ 
+
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.slickSlide > div {
+  height: 100%;
+}
+
+.slick-list,
+.slick-track {
+  height: 100%;
+}
+/* موج */
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 4;
+}

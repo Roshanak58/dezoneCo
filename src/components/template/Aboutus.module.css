@@ -1,0 +1,100 @@
+.balanceHeight{
+  min-height: 900px;
+}
+.balanceDiv{
+  margin-top: 0px;
+  font-family:'B Nazanin';
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
+  gap: 8px 10px;              /* فاصله بین آیتم‌ها */
+  justify-content:center; 
+  height: auto;
+}
+.service{
+   width: 120px;
+  height: auto;
+   font-family:'B Nazanin';
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column; /* چینش عمودی */
+  align-items: center;    /* وسط‌چین افقی */
+ /* width: 220px;  */
+  margin-top: 20px;
+
+  transition: opacity 0.8s ease;
+  cursor: pointer;
+
+}
+.service.inactive {
+  opacity: 0.8;
+}
+
+.service.active {
+  opacity: 1;
+}
+
+ .img-border {
+  border-radius: 50%;
+  border: 8px solid #0c388d;
+}
+
+.aboutLink{
+   /* white-space: nowrap; */
+  font-family:'B Nazanin';
+  background-color: none;
+  color: #000;
+  margin-top: 10px; /* فاصله از عکس */
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .balanceDiv{
+     margin-top: 0px;
+  font-family:'B Nazanin';
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
+  gap: 2px 2px;              /* فاصله بین آیتم‌ها */
+  justify-content:center; 
+  height: auto;
+}
+.service{
+   width: 80px;
+  height: auto;
+   font-family:'B Nazanin';
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column; /* چینش عمودی */
+  align-items: center;    /* وسط‌چین افقی */
+ /* width: 220px;  */
+  margin-top: 10px;
+
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  }
+  
+  .service img{
+    width: 60px;
+    height: 60px;
+  }
+     .infoLi p{
+    font-size: 1rem;
+  }
+  .balanceHeight{
+    min-height: 700px;
+  }
+  .aboutLink{
+    font-size: 0.9rem;
+  }
+  .textClass{
+    font-size: small;
+  }
+
+}

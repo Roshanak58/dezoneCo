@@ -1,0 +1,91 @@
+.projectAlign {
+  display: flex;
+   flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.profileData {
+  margin-top: 20px;
+}
+
+.profileData div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profileData span {
+  color: #7f7e86;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.profileData p {
+  font-size: 1.2rem;
+  color: #494a52;
+  font-weight: 500;
+}
+.profileData-link{
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3f79f7;
+border-radius: 5px;
+}
+/* عکس‌ها سمت چپ */
+.pictureProj {
+  /* width: 70%; */
+  /* height: 150px; */
+  display: flex;
+  flex-wrap: wrap;            /* تا عکس‌ها پشت سر هم و به خط بعد بروند */
+  justify-content: center;     /* عکس‌ها وسط چین */
+  gap: 15px;
+}
+.ProjIdDiv{
+  display: "flex";
+   gap: 15px;
+}
+.processStep{
+   grid-template-columns: repeat(2, auto); /* هر خط 2 تا */
+   flex-wrap: wrap;  
+     /* flex-direction: column;  */
+     justify-content: space-between;
+     gap: 5px;
+  /* width: auto; */
+  
+  gap: 8px 10px; /* فاصله بین p ها */
+  align-items: center;
+ }
+ .flexContainer {
+  /* display: flex; */
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+ .pictureProj img {
+  width: 250px;
+  height: 150;
+  }
+  .ProjIdDiv  {
+    gap: 10px;
+  }
+  .ProjIdDiv h3 {
+    font-size: 1rem;
+  }
+   .ProjIdDiv  p{
+    font-size: 1.1rem;
+    /* text-align: center; */
+  }
+  .ProjIdDiv a{
+    font-size: 0.8rem;
+  }
+  .flexContainer p{
+    font-size: 1.1rem;
+  }
+}

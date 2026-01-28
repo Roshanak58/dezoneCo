@@ -1,0 +1,52 @@
+
+import Link from "next/link";
+
+import { TiHomeOutline } from "react-icons/ti";
+import { MdWaterDrop } from "react-icons/md";
+import { MdConstruction } from "react-icons/md";
+import { FaPeopleRoof } from "react-icons/fa6";
+import { IoCallOutline } from "react-icons/io5";
+import { useState } from "react";
+
+function Navbar() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="navbarWrapper">
+      {/* <nav className="navbar"> */}
+      <nav className={`navbar ${open ? "open" : ""}`}>
+        <ul className={`menu ${open ? "open" : ""}`}>
+          <li>
+            <TiHomeOutline />
+            <Link className="fontLink" href="/" onClick={() => setOpen(!open)}>خانه</Link>
+          </li>
+          <li>
+            <FaPeopleRoof />
+            <Link className="fontLink" href="/aboutus" onClick={() => setOpen(!open)}>درباره ما </Link>
+          </li>
+
+          <li>
+            <MdWaterDrop />
+            <Link className="fontLink" href="/services" onClick={() => setOpen(!open)}>خدمات ما </Link>
+          </li>
+
+          <li>
+            <MdConstruction />
+            <Link className="fontLink" href="/projects" onClick={() => setOpen(!open)}>پروژه ها </Link>
+          </li>
+
+          <li>
+            <IoCallOutline />
+            <Link className="fontLink" href="/contactus" onClick={() => setOpen(!open)}>تماس با ما </Link>
+          </li>
+        </ul>
+      </nav>
+      <div className="hamburger" onClick={() => setOpen(!open)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  );
+}
+
+export default Navbar;
