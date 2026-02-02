@@ -10,28 +10,28 @@ const Map = dynamic(() => import("../elements/Map"), {
 
 function ContactUs() {
   return (
-    <div className="contactUs">
-      <div className="contactFont">
-        <div className="callUs">
+    <div className={styles.contactUs}>
+      <div className={styles.contactFont}>
+        <div className={styles.callUs}>
           <p>آدرس:</p>
-          <p className="pBlue">
+          <p className={styles.pBlue}>
             تهران، انتهای همت غرب شهرک گلستان، خیابان بنفشه، پلاک 53{" "}
           </p>
         </div>
-        <div className="callUs">
+        <div className={styles.callUs}>
           <p>تلفن:</p>
-          <p className="pBlue">021-44700011 </p>
+          <p className={styles.pBlue}>021-44700011 </p>
         </div>
-        <div className="callUs">
+        <div className={styles.callUs}>
           <p>فکس: </p>
-          <p className="pBlue">021-44763634</p>
+          <p className={styles.pBlue}>021-44763634</p>
         </div>
-        <div className="callUs">
+        <div className={styles.callUs}>
             <p>پست الکترونیک:</p>
-          <p className="pBlue"> info@dezoneco.com</p>
+          <p className={styles.pBlue}> info@dezoneco.com</p>
         </div>
       </div>
-      <div className=" mapStyle">
+      <div className={styles. mapStyle}>
         {/* <h1>لوکیشن شرکت</h1> */}
       <Map />
       </div>

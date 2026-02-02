@@ -229,17 +229,22 @@ font-size: small;
 .fontLink{
   font-size: 14px !important;
 }
-  .hamburger {
+.hamburger {
     display: flex;
     position: absolute;
     margin-right: 0px;
     /* left: 0;       اگر RTL هست */
-    top: 0px;
-    transform: translateY(-70%);
+    top: 20px;
+    /* transform: translateY(-70%); */
     /* transform: translateX(-79%); */
     /* z-index: 999; */
     text-align: right;    
-  }
+}
+.hamburger a{
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+}
   .rightHead-section {
   display: flex;
   justify-content: space-between; /* یکی راست، یکی چپ */

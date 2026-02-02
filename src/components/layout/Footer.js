@@ -11,7 +11,7 @@ function Footer() {
       </div>
      <div className={styles.leftSec}>
       <p>Developed by R.Ahmadpour</p>
-      <p>📞09124418173</p>
+      <p>📞0912****173</p>
      </div>
     </footer>
   );

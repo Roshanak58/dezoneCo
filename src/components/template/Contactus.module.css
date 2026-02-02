@@ -1,0 +1,27 @@
+.contactUs{ 
+  background-image: url('/images/Backg4.jpg'); /* مسیر عکس در پوشه public */
+    background-size: cover;        /* عکس کل صفحه را پوشش می‌دهد */
+  background-position: center;   /* وسط‌چین */
+  background-repeat: no-repeat;  /* تکرار نشود */
+   display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+.contactFont{
+ 
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+.callUs{
+   /* display: flex; */
+  align-items: center;
+  gap: 5px;  
+}
+.mapStyle{
+  width: 400px;
+}
+
+
+.pBlue{
+  color: #5783be;
+}

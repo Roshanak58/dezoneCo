@@ -43,7 +43,7 @@ function Navbar() {
       <div className="hamburger" onClick={() => setOpen(!open)}>
         <span></span>
         <span></span>
-        <span></span>
+        <span></span><a>منو</a>
       </div>
     </div>
   );
