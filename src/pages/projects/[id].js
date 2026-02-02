@@ -55,7 +55,7 @@ function Index({ servProject, picproj, processproj }) {
             {processStep.map((procS) => (
               <div key={procS.id} >
                 <p style={{ fontWeight: "bold", paddingLeft: "5px" }}> - </p>
-                <p>{procS?.processStep}</p>
+                <p className={styles.alignText}>{procS?.processStep}</p>
               </div>
             ))}
           </div>
