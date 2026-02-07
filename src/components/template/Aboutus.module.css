@@ -3,6 +3,7 @@
 }
 .balanceDiv{
   margin-top: 0px;
+  padding-right: 0px;
   font-family:'B Nazanin';
   font-size: large;
   display: flex;
@@ -20,7 +21,7 @@
   flex-direction: column; /* چینش عمودی */
   align-items: center;    /* وسط‌چین افقی */
  /* width: 220px;  */
-  margin-top: 20px;
+  /* margin-top: 20px; */
 
   transition: opacity 0.8s ease;
   cursor: pointer;

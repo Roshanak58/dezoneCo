@@ -164,8 +164,8 @@ section {
 }
 .aboutus{
   color: black;
-  margin-top: 10px;
-  margin-right: 40px;
+  /* margin-top: 10px; */
+  /* margin-right: 10px; */
    background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه public */
   background-size: cover;        /* عکس کل صفحه را پوشش می‌دهد */
   background-position: center;   /* وسط‌چین */

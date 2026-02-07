@@ -29,6 +29,9 @@
   font-size: 1.2rem;
   height: auto;
 }
+.infoLi h3{
+  color: black;
+}
 .infoLi p{
   color:#242323 ;
     font-size: 1rem;
