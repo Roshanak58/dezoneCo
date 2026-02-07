@@ -79,6 +79,7 @@ background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه pu
   border: 8px solid #0c388d;
 }
 .infoLi{
+  color: black;
   position:relative;
   /* padding-top:30px; */
   /* margin-right: 30px; */
@@ -104,6 +105,7 @@ background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه pu
   gap: 40px;
   justify-content: center;
   align-items: center;
+  color: black;
  
 }
 .balanceItem button{

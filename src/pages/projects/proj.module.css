@@ -71,13 +71,15 @@ border-radius: 5px;
 }
 @media (max-width: 768px) {
  .pictureProj img {
-  width: 250px;
+  padding-left: 5px;
+  width: 230px;
   height: 150;
   }
   .ProjIdDiv  {
     gap: 10px;
   }
   .ProjIdDiv h3 {
+    color: black;
     font-size: 1rem;
   }
    .ProjIdDiv  p{

@@ -12,7 +12,7 @@ function Layout({ children }) {
         <Breadcrumb />
         <div className="leftHead-section">
           <div className="lang">
-            <Link href="/">En</Link>/<Link href="/">fa</Link>
+            <Link href="/En/">En</Link>/<Link href="/">fa</Link>
           </div>
           <div>
             <Link href="/">
