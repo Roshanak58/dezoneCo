@@ -11,6 +11,7 @@
 
 }
 .aboutH3{
+  color: black;
     font-size: 1.2rem;
 }
 .textClass{
@@ -57,9 +58,11 @@
         
     }
       .gridLi li{
+        color: rgb(32, 31, 31);
     font-size: 1rem;
   }
   .aboutH3{
+    color: black;
       font-size: 1.1rem;
       padding-bottom: 10px;
   }

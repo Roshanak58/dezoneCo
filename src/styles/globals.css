@@ -163,6 +163,7 @@ section {
   align-items: center;
 }
 .aboutus{
+  color: black;
   margin-top: 10px;
   margin-right: 40px;
    background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه public */

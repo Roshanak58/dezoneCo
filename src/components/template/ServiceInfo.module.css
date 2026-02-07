@@ -30,6 +30,11 @@
   height: auto;
 }
 .infoLi p{
+  color:#242323 ;
+    font-size: 1rem;
+  }
+  .gridLi{
+    color:#242323 ;
     font-size: 1rem;
   }
 .balanceItem {
