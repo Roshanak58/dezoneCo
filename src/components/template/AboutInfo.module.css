@@ -15,6 +15,7 @@
     font-size: 1.2rem;
 }
 .textClass{
+  color: black;
     max-width: 95%;
   margin-left: 50px;
    margin-top: 10px;
@@ -27,7 +28,8 @@
     color: #fff;
     border: none;
 }
-.clsImage{margin-right: 25%;
+.clsImage{
+  margin-right: 25%;
 }
 
 .gridLi{
@@ -69,5 +71,8 @@
   .about{
   padding-top:20px;
   margin-right: 40px;
+  }
+  .clsImage{
+    margin-right: 0px;
   }
  }

@@ -31,27 +31,20 @@ text-decoration: none;
 .projectLink:hover {
   text-decoration: underline;
 }
-.projectAlign {
-  /* display: flex; */
-   flex-direction: row; 
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 10px;
-}
+
 .rightSection {
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
   width: 100%;
-  align-items: center;
+  /* align-items: center; */
   gap: 10px;
     /* flex-wrap: nowrap;     جلوگیری از رفتن به خط بعد */
 }
 .rightSection img {
   flex-shrink: 0;
 }
-.projectAlign {
+/* .projectAlign {
   display: flex;
   width:  100%;
    flex-direction: row; 
@@ -60,8 +53,18 @@ text-decoration: none;
   gap: 20px;
   padding-bottom: 30px;
   margin-bottom: 10px;
+} */
+.projectAlign {
+  display: flex;
+   flex-direction: row; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
 }
 .profileData {
+  
   margin-top: 20px;
 }
 
@@ -103,11 +106,12 @@ border-radius: 5px;
 }
 .centerItems{
   margin-top: 20px;
+  margin: 0 0;
   width: 80%;
   overflow-x: auto;
-  /* justify-content:space-between;
-   align-items: center; */
-    /* padding-right:  40px; */
+  /* justify-content:space-between; */
+   align-items: center;
+    padding-right:  40px;
     /* gap:40px; */
 }
 .tableLine{
