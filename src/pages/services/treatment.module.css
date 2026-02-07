@@ -14,7 +14,7 @@
   width: 100%;
 
 }
-.aboutus h2{
+.aboutus h3{
 padding-right: 10px;
 }
 .aboutus p {
@@ -24,7 +24,7 @@ padding-right: 10px;
   margin-right: 40px;
   justify-content: center;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .balanceDiv{
@@ -140,9 +140,9 @@ background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه pu
 }
 .boldLi{
   /* list-style-type:""; */
-  /* font-size: 20px; */
+  font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: #000;
   
 }
 /* .boldLi ::-moz-list-bullet{
@@ -162,9 +162,10 @@ font-weight: bold;
 }
 .otherLi{
   list-style-type:"-  ";
+  font-size: 16px;
   font-weight: bold;
   content: "- ";
-  color: #000;
+  color: #3e3e3e;
 }
  @media (max-width: 768px){
   .balanceDiv{

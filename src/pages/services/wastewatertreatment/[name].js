@@ -95,7 +95,7 @@ function Index() {
         <div className={styles.aboutus}>
           {/* <div className={styles.textServices}>
             <div className={styles.alignBack}> */}
-              <h2>تصفیه فاضلاب صنعتی : </h2>
+              <h3>تصفیه فاضلاب صنعتی : </h3>
             {/* </div> */}
           {/* </div> */}
           <p>
