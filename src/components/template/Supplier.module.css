@@ -145,6 +145,7 @@ border-radius: 5px;
 }
 @media (max-width:768px){
   .tableLine{
+    margin-right: 0px;
     min-width: 300px;
     font-size: 0.9rem;
   }
