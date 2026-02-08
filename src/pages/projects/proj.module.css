@@ -46,7 +46,7 @@ border-radius: 5px;
   gap: 15px;
 }
 .ProjIdDiv{
-  display: "flex";
+  display: "flex" ;
    gap: 15px;
 }
 .processStep{
@@ -76,7 +76,8 @@ border-radius: 5px;
   width: 230px;
   height: 150;
   }
-  .ProjIdDiv  {
+  .ProjIdDiv{
+  display: contents !important;
     gap: 10px;
   }
   .ProjIdDiv h3 {
@@ -85,6 +86,7 @@ border-radius: 5px;
   }
    .ProjIdDiv  p{
     font-size: 1.05rem;
+    padding-right: 8px;
     /* text-align: center; */
   }
   .ProjIdDiv a{

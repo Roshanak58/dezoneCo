@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import styles from '@/pages/projects/proj.module.css'
+import styles from "@/pages/projects/proj.module.css";
 import { ProjData as projectdata } from "../../constants/ProjData";
 import { PictureData as pictures } from "../../constants/PicData";
 import { ProcessStepData as ProcessData } from "../../constants/ProcessStepData";
@@ -12,7 +12,7 @@ function Index({ servProject, picproj, processproj }) {
   return (
     <div className={styles.projectAlign}>
       <div className={styles.profileData}>
-        <div  className={styles.ProjIdDiv}>
+        <div className={styles.ProjIdDiv}>
           <h3>پروژه:</h3>
           <p>{project?.name}</p>
         </div>
@@ -34,8 +34,10 @@ function Index({ servProject, picproj, processproj }) {
         </div>
         <div className={styles.ProjIdDiv}>
           <h3>ظرفیت:</h3>
-          <p>{project?.capacity}</p>
-          <a style={{fontWeight: "bold"}}> متر مکعب در روز </a>
+          <div style={{ display: "flex" }}>
+            <p>{project?.capacity}</p>
+            <a style={{ fontWeight: "bold" }}> متر مکعب در روز </a>
+          </div>
         </div>
         <div className={styles.ProjIdDiv}>
           <h3>موقعیت:</h3>
@@ -53,7 +55,7 @@ function Index({ servProject, picproj, processproj }) {
           <h3>مراحل فرایند:</h3>
           <div className={styles.flexContainer}>
             {processStep.map((procS) => (
-              <div key={procS.id} >
+              <div key={procS.id}>
                 <p style={{ fontWeight: "bold", paddingLeft: "5px" }}> - </p>
                 <p className={styles.alignText}>{procS?.processStep}</p>
               </div>
@@ -65,7 +67,7 @@ function Index({ servProject, picproj, processproj }) {
         {pic.map((pict) => (
           <div key={pict.id}>
             {/* <img src={pict.pic} alt="image" /> */}
-             <Image
+            <Image
               className={styles.imgBorder}
               src={pict.pic}
               alt="Logo"
