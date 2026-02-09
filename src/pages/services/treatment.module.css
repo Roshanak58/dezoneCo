@@ -5,7 +5,8 @@
 }
 .aboutus{
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
    background-image: url('/images/Backg1.jpg'); /* مسیر عکس در پوشه public */
   background-size: cover;        /* عکس کل صفحه را پوشش می‌دهد */
   background-position: center;   /* وسط‌چین */
@@ -15,7 +16,7 @@
 
 }
 .aboutus h3{
-padding-right: 10px;
+padding-right: 20px;
  color: black;
 }
 .aboutus p {

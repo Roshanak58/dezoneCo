@@ -93,11 +93,7 @@ function Index() {
       )}
       {type === "IndustrialWastewater" && (
         <div className={styles.aboutus}>
-          {/* <div className={styles.textServices}>
-            <div className={styles.alignBack}> */}
               <h3>تصفیه فاضلاب صنعتی : </h3>
-            {/* </div> */}
-          {/* </div> */}
           <p>
             شرکت مهندسی دزون بهترین راه حل های ممکن را برای تصفیه فاضلاب صنعتی و
             استفاده مجدد از پساب تصفیه شده در صنایع مختلف به خصوص صنعت خودرو،
