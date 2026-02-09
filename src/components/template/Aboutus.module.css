@@ -8,21 +8,28 @@
   font-size: large;
   display: flex;
   flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
-  gap: 8px 10px;              /* فاصله بین آیتم‌ها */
+  gap:10px 10px !important;              /* فاصله بین آیتم‌ها */
   justify-content:center; 
   height: auto;
 }
 .service {
   position: relative;
-  width: 120px;
+  /* width: 120px; */
   text-align: center;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  align-items: center;
+   align-items: center;
+  flex-direction: column;
+}
+.serviceP{
+  font-size: 5px;
+  margin-top: 6px;   /* فاصله زیر عکس */
+  text-align: center;
 }
 
 .serviceImg {
+  border-radius: 50% ;
   transition: transform 0.3s ease;
 }
 .overlayText {
@@ -95,14 +102,16 @@
   justify-content:center; 
   height: auto;
 }
-.service {
+/* .service {
     width: 80px;
-  }
+  } */
   .service img{
     width: 60px;
     height: 60px;
   }
-
+ .serviceP{
+  font-size: 10px !important;
+  }
   .overlayText {
     font-size: 0.75rem;
     padding: 3px 8px;

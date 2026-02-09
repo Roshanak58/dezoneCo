@@ -13,6 +13,7 @@
   background-repeat: no-repeat;  /* تکرار نشود */
   height: 100vh;                 /* ارتفاع کل صفحه */
   width: 100%;
+  color: black;
 
 }
 .aboutus h3{

@@ -21,6 +21,7 @@ function Wastewatertreatment() {
       </p>
       <div className={styles.balanceItem}>
         <div>
+          <Link href="/services/wastewatertreatment/urbanWasteWater">
           <Image
             className={styles.imgBorder}
             src="/images/urbanwastewater.png"
@@ -29,22 +30,21 @@ function Wastewatertreatment() {
             height={100}
           />
 
-          <Link href="/services/wastewatertreatment/urbanWasteWater">
-            {" "}
-            تصفیه فاضلاب شهری
+           <p> تصفیه فاضلاب شهری </p>
+            
           </Link>
         </div>
         <div>
-          <Image
-            className={styles.imgBorder}
-            src="/images/industry.png"
-            alt="Logo"
-            width={100}
-            height={100}
-          />
           <Link href="/services/wastewatertreatment/IndustrialWastewater">
-            {" "}
-            تصفیه فاضلاب صنعتی
+            <Image
+              className={styles.imgBorder}
+              src="/images/industry.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+
+            <p> تصفیه فاضلاب صنعتی</p>
           </Link>
         </div>
       </div>

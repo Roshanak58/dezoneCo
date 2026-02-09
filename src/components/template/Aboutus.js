@@ -57,13 +57,13 @@ function AboutUs() {
         <div className={styles.balanceDiv}>
           <Link href="/aboutus/info" className={styles.service}>
             <Image src="/images/info.png" alt="Logo" width={100} height={100} />
-
+            <p className={styles.serviceP}>اطلاعات کلی شرکت</p>
             <span className={styles.overlayText}>اطلاعات کلی شرکت</span>
           </Link>
 
           <Link href="/aboutus/QC" className={styles.service}>
             <Image src="/images/QC.jpg" alt="Logo" width={100} height={100} />
-
+            <p className={styles.serviceP}>خط و مشی کیفی</p>
             <span className={styles.overlayText}>خط و مشی کیفی</span>
           </Link>
 
@@ -74,6 +74,7 @@ function AboutUs() {
               width={100}
               height={100}
             />
+            <p className={styles.serviceP}>گواهی صلاحیت پیمانکاری</p>
             <span className={styles.overlayText}>گواهی صلاحیت پیمانکاری</span>
           </Link>
           <Link href="/aboutus/ranking" className={styles.service}>
@@ -84,6 +85,7 @@ function AboutUs() {
               height={100}
               onClick={() => RankingClick()}
             />
+            <p className={styles.serviceP}>رتبه بندی صلاحیت ها</p>
             <span className={styles.overlayText}>رتبه بندی صلاحیت ها</span>
           </Link>
 
@@ -95,6 +97,7 @@ function AboutUs() {
               height={100}
               onClick={() => activityClick()}
             />
+            <p className={styles.serviceP}>موضوع فعالیت </p>
             <span className={styles.overlayText}>موضوع فعالیت </span>
           </Link>
         </div>
