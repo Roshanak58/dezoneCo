@@ -153,7 +153,7 @@ function Services() {
             width={100}
             height={105}
           />
-
+          <p className={styles.serviceP}>خدمات مهندسی</p>
           <span className={styles.overlayText}>خدمات مهندسی</span>
         </Link>
 
@@ -165,7 +165,7 @@ function Services() {
             width={105}
             height={105}
           />
-
+          <p className={styles.serviceP}>تصفیه فاضلاب</p>
           <span className={styles.overlayText}>تصفیه فاضلاب</span>
         </Link>
 
@@ -177,6 +177,7 @@ function Services() {
             width={105}
             height={105}
           />
+          <p className={styles.serviceP}>تصفیه آب</p>
           <span className={styles.overlayText}>تصفیه آب</span>
         </Link>
         <Link href="/services/pstation" className={styles.service}>
@@ -187,6 +188,7 @@ function Services() {
             width={105}
             height={105}
           />
+          <p className={styles.serviceP}>ایستگاه پمپاژ</p>
           <span className={styles.overlayText}>ایستگاه پمپاژ</span>
         </Link>
 
@@ -198,6 +200,7 @@ function Services() {
             width={105}
             height={105}
           />
+          <p className={styles.serviceP}>بهره برداری و نگهداری</p>
           <span className={styles.overlayText}>بهره برداری و نگهداری</span>
         </Link>
         <Link href="/services/afterSale" className={styles.service}>
@@ -208,6 +211,7 @@ function Services() {
             width={105}
             height={105}
           />
+          <p className={styles.serviceP}>خدمات پس از فروش</p>
           <span className={styles.overlayText}>خدمات پس از فروش</span>
         </Link>
         <Link href="/supplier" className={styles.service}>
@@ -218,6 +222,7 @@ function Services() {
             width={105}
             height={105}
           />
+          <p className={styles.serviceP}>تأمین قطعات از سازندگان خارجی</p>
           <span className={styles.overlayText}>
             تأمین قطعات از سازندگان خارجی
           </span>

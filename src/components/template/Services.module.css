@@ -9,7 +9,7 @@
 .balanceDiv{
   margin-top: 0px;
   padding-top: 40px;
-   font-family:'B Nazanin';
+   /* font-family:'B Nazanin'; */
    font-size: large;
   display: flex;
   flex-wrap: wrap;        /* اجازه رفتن به خط بعد */
@@ -28,6 +28,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.serviceP{
+  font-size: 10px;
+  margin-top: 6px;   /* فاصله زیر عکس */
+  text-align: center;
 }
 
 .serviceImg {
@@ -86,6 +92,9 @@
   .service img{
     width: 60px;
     height: 60px;
+  }
+  .serviceP{
+  font-size: 8px;
   }
 
   .overlayText {
