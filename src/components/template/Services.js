@@ -145,118 +145,84 @@ function Services() {
     <>
       <h2 className={styles.classH2}>خدمات شرکت مهندسی دزون: </h2>
       <div className={styles.balanceDiv}>
-        <div className={styles.service}>
-          <a href="/services/engineerS">
-            <Image
-              className={styles.imgBorder}
-              src="/images/engineer.jpg"
-              alt="Logo"
-              width={100}
-              height={105}
-            />
-          </a>
-          <Link href="/services/engineerS" className={styles.aboutLink}>
-            خدمات مهندسی
-          </Link>
-          {/* <button onClick={() => enginerSClick()}>خدمات مهندسی</button> */}
-        </div>
-        <div className={styles.service}>
-          <a href="/services/wastewatertreatment">
-            <Image
-              className={styles.imgBorder}
-              src="/images/sewage.jpg"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => wwtreatmentClick()}>تصفیه فاضلاب</button> */}
-          <Link href="/services/wastewatertreatment" className={styles.aboutLink}>
-            تصفیه فاضلاب
-          </Link>
-        </div>
+        <Link href="/services/engineerS" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/engineer.jpg"
+            alt="Logo"
+            width={100}
+            height={105}
+          />
 
-        <div className={styles.service}>
-          <a href="/services/waterpurification">
-            <Image
-              className={styles.imgBorder}
-              src="/images/water.jpg"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => waterpurificationClick()}>تصفیه آب</button> */}
-          <Link href="/services/waterpurification" className={styles.aboutLink}>
-            تصفیه آب
-          </Link>
-        </div>
-        <div className={styles.service}>
-          <a href="/services/pstation">
-            <Image
-              className={styles.imgBorder}
-              src="/images/pumping.jpg"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => pStationClick()}>ایستگاه پمپاژ</button> */}
-          <Link href="/services/pstation" className={styles.aboutLink}>
-            ایستگاه پمپاژ
-          </Link>
-        </div>
+          <span className={styles.overlayText}>خدمات مهندسی</span>
+        </Link>
 
-        <div className={styles.service}>
-          <a href="/services/operation">
-            <Image
-              className={styles.imgBorder}
-              src="/images/operation.jpg"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => oprationClick()}>بهره برداری و نگهداری</button> */}
-          <Link href="/services/operation" className={styles.aboutLink}>
-            بهره برداری و نگهداری
-          </Link>
-        </div>
-        <div className={styles.service}>
-          <a href="/services/afterSale">
-            <Image
-              className={styles.imgBorder}
-              src="/images/afterSale.png"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => afterSaleClick()}>خدمات پس از فروش </button> */}
-          <Link href="/services/afterSale" className={styles.aboutLink}>
-            خدمات پس از فروش
-          </Link>
-        </div>
-        <div className={styles.service}>
-          <a href="/supplier">
-            <Image
-              className={styles.imgBorder}
-              src="/images/supplyer.jpg"
-              alt="Logo"
-              width={105}
-              height={105}
-            />
-          </a>
-          {/* <button onClick={() => supplyerClick()}>
+        <Link href="/services/wastewatertreatment" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/sewage.jpg"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+
+          <span className={styles.overlayText}>تصفیه فاضلاب</span>
+        </Link>
+
+        <Link href="/services/waterpurification" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/water.jpg"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+          <span className={styles.overlayText}>تصفیه آب</span>
+        </Link>
+        <Link href="/services/pstation" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/pumping.jpg"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+          <span className={styles.overlayText}>ایستگاه پمپاژ</span>
+        </Link>
+
+        <Link href="/services/operation" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/operation.jpg"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+          <span className={styles.overlayText}>بهره برداری و نگهداری</span>
+        </Link>
+        <Link href="/services/afterSale" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/afterSale.png"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+          <span className={styles.overlayText}>خدمات پس از فروش</span>
+        </Link>
+        <Link href="/supplier" className={styles.service}>
+          <Image
+            className={styles.imgBorder}
+            src="/images/supplyer.jpg"
+            alt="Logo"
+            width={105}
+            height={105}
+          />
+          <span className={styles.overlayText}>
             تأمین قطعات از سازندگان خارجی
-          </button> */}
-          <Link href="/supplier" className={styles.aboutLink}>
-            تأمین قطعات از سازندگان خارجی
-          </Link>
-        </div>
+          </span>
+        </Link>
       </div>
-
-      
     </>
   );
 }

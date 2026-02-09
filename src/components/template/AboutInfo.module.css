@@ -15,6 +15,7 @@
     font-size: 1.2rem;
 }
 .textClass{
+  padding-top: 5px;
   color: black;
     max-width: 95%;
   margin-left: 50px;
@@ -33,7 +34,7 @@
 }
 
 .gridLi{
-  
+  padding-top: 5px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* دو ستون */
   gap: 2rem; /* فاصله بین ستون‌ها */

@@ -1,11 +1,14 @@
 .classH2{
   font-family: 'B Nazanin';
+  font-size: 20px;
+  font-weight: bold;
   margin-top: 10px;
   margin-right: 40px;
   max-height: 15px;
 }
 .balanceDiv{
   margin-top: 0px;
+  padding-top: 40px;
    font-family:'B Nazanin';
    font-size: large;
   display: flex;
@@ -15,23 +18,48 @@
 }
  .imgBorder {
   border-radius: 50%;
-  /* border: 8px solid #0c388d; */
+  border: 6px solid #0c388d;
 }
-.service{
-   width: 120px;
-  height: auto;
-   font-family:'B Nazanin';
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column; /* چینش عمودی */
-  align-items: center;    /* وسط‌چین افقی */
- /* width: 220px;  */
-  margin-top: 20px;
-
-  transition: opacity 0.3s ease;
+.service {
+  position: relative;
+  width: 120px;
+  text-align: center;
   cursor: pointer;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.serviceImg {
+  transition: transform 0.3s ease;
+}
+.overlayText {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:#0c388d;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* کلیک از خود لینک می‌گذره */
+}
+.service:hover .overlayText,
+.service:active .overlayText,
+.service:focus .overlayText {
+  opacity: 1;
+}
+
+.service:hover .serviceImg,
+.service:active .serviceImg,
+.service:focus .serviceImg {
+  transform: scale(1.15);
+}
+
 .aboutLink{
    /* white-space: nowrap; */
   font-family:'B Nazanin';
@@ -54,17 +82,35 @@
 }
   .service {
     width: 80px;
-    text-align: center;
-    /* justify-content: center; */
   }
   .service img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .overlayText {
+    font-size: 0.75rem;
+    padding: 3px 8px;
   }
   .service button{
     font-size: 1rem;
   }
   .imgBorder {
   border: 4px solid #9fa2a9;
-}
+} .service:hover img {
+  border-color:  #0c388d;
+    transform: scale(1.15);
+  }
+
+  .service:hover .aboutLink {
+    display: block;
+    margin-top: 6px;
+  }
+   .service:focus-within img {
+    transform: scale(1.15);
+  }
+
+  .service:focus-within .aboutLink {
+    display: block;
+  }
 }

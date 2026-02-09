@@ -18,10 +18,26 @@
   gap: 5px;  
 }
 .mapStyle{
+  padding-right: 40px;
   width: 400px;
 }
 
 
 .pBlue{
   color: #5783be;
+}
+@media (max-width: 768px) {
+  .contactUs{
+    display: inline;
+  }
+  .contactFont{
+ 
+  font-size: 1rem;
+}
+.mapStyle{
+  padding-right: auto;
+  width: 400px;
+}
+
+
 }

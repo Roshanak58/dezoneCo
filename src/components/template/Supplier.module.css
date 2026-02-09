@@ -144,6 +144,10 @@ border-radius: 5px;
   text-align: left;
 }
 @media (max-width:768px){
+  .projectP{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
   .tableLine{
     margin-right: 0px;
     min-width: 300px;
@@ -152,5 +156,8 @@ border-radius: 5px;
   .projectAlign{
     flex-direction: column;
     gap: 15px;
+  }
+  .projectLink{
+    font-size: 1rem;
   }
 }

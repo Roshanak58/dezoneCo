@@ -55,88 +55,48 @@ function AboutUs() {
     <div>
       <div className={styles.balanceHeight}>
         <div className={styles.balanceDiv}>
-          <div
-            className={`${styles.service} ${
-              active === 1 ? styles.active : styles.inactive
-            }`}
-          >
-            <a href="/aboutus/info">
-              <Image
-                src="/images/info.png"
-                alt="Logo"
-                width={100}
-                height={100}
-              />
-            </a>
+          <Link href="/aboutus/info" className={styles.service}>
+            <Image src="/images/info.png" alt="Logo" width={100} height={100} />
 
-            <Link href="/aboutus/info" className={styles.aboutLink}>
-              اطلاعات کلی شرکت
-            </Link>
-          </div>
+            <span className={styles.overlayText}>اطلاعات کلی شرکت</span>
+          </Link>
 
-          <div
-            className={`${styles.service} ${
-              active === 2 ? styles.active : styles.inactive
-            }`}
-          >
-            <a  href="/aboutus/QC">
-              <Image src="/images/QC.jpg" alt="Logo" width={100} height={100} />
-            </a>
-            <Link href="/aboutus/QC" className={styles.aboutLink}>
-              خط و مشی کیفی
-            </Link>
-          </div>
-          <div
-            className={`${styles.service} ${
-              active === 3 ? styles.active : styles.inactive
-            }`}
-          >
+          <Link href="/aboutus/QC" className={styles.service}>
+            <Image src="/images/QC.jpg" alt="Logo" width={100} height={100} />
+
+            <span className={styles.overlayText}>خط و مشی کیفی</span>
+          </Link>
+
+          <Link href="/aboutus/Qualification" className={styles.service}>
             <Image
               src="/images/Qualification.png"
               alt="Logo"
               width={100}
               height={100}
             />
-            <Link  href="/aboutus/Qualification" className={styles.aboutLink}>  گواهی صلاحیت پیمانکاری</Link>
-          </div>
-          <div
-            className={`${styles.service} ${
-              active === 4 ? styles.active : styles.inactive
-            }`}
-          >
-            <a href="/aboutus/ranking">
-              <Image
-                src="/images/Ranking.png"
-                alt="Logo"
-                width={100}
-                height={100}
-                onClick={() => RankingClick()}
-              />
-            </a>
+            <span className={styles.overlayText}>گواهی صلاحیت پیمانکاری</span>
+          </Link>
+          <Link href="/aboutus/ranking" className={styles.service}>
+            <Image
+              src="/images/Ranking.png"
+              alt="Logo"
+              width={100}
+              height={100}
+              onClick={() => RankingClick()}
+            />
+            <span className={styles.overlayText}>رتبه بندی صلاحیت ها</span>
+          </Link>
 
-            <Link href="/aboutus/ranking" className={styles.aboutLink}>
-              رتبه بندی صلاحیت ها
-            </Link>
-          </div>
-          <div
-            className={`${styles.service} ${
-              active === 5 ? styles.active : styles.inactive
-            }`}
-          >
-            <a href="/aboutus/activity">
-              <Image
-                src="/images/activity.jpg"
-                alt="Logo"
-                width={100}
-                height={100}
-                onClick={() => activityClick()}
-              />
-            </a>
-
-            <Link href="/aboutus/activity" className={styles.aboutLink}>
-              موضوع فعالیت{" "}
-            </Link>
-          </div>
+          <Link href="/aboutus/activity" className={styles.service}>
+            <Image
+              src="/images/activity.jpg"
+              alt="Logo"
+              width={100}
+              height={100}
+              onClick={() => activityClick()}
+            />
+            <span className={styles.overlayText}>موضوع فعالیت </span>
+          </Link>
         </div>
       </div>
       {qualification === 1 && (
