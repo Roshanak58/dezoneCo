@@ -35,6 +35,7 @@ export default function Breadcrumb() {
     "afterSale":" ",
     "wastewatertreatment":"تصفیه فاضلاب ",
     "waterpurification":"تصفیه آب",
+    "pictureP":" ",
     // هر مقدار دیگر را اینجا اضافه کنید
   };
   const isId = (str) => {

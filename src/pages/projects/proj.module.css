@@ -50,25 +50,29 @@ border-radius: 5px;
    gap: 15px;
 }
 .processStep{
-   grid-template-columns: repeat(2, auto); /* هر خط 2 تا */
-   flex-wrap: wrap;  
+   
+   /* flex-wrap: wrap;   */
      /* flex-direction: column;  */
      justify-content: space-between;
-     gap: 5px;
+     gap: 30px;
   /* width: auto; */
   
   gap: 8px 10px; /* فاصله بین p ها */
   align-items: center;
  }
  .flexContainer {
+  /* grid-template-columns: repeat(2, auto); /* هر خط 2 تا */
   /* display: flex; */
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   gap: 16px;
   margin-bottom: 30px;
   padding-bottom: 30px;
 }
 .alignText{
   font-size: 1rem;
+}
+.colorLink{
+  color: #0070f3;
 }
 @media (max-width: 768px) {
  .pictureProj img {

@@ -1,7 +1,8 @@
 import Slider from "react-slick";
 import Image from "next/image";
 
-import { PictureData as images } from "@/constants/PicData";
+import { PictureData  } from "@/constants/PicData";
+ const images = PictureData.filter((item) => item.Asli === 1);
 import styles from "@/components/elements/ImageSlider.module.css"
 export default function ImageSlider() {
   const settings = {
