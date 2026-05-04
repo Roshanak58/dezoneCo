@@ -1,9 +1,9 @@
 import Slider from "react-slick";
 import Image from "next/image";
 
-import { PictureData  } from "@/constants/PicData";
- const images = PictureData.filter((item) => item.Asli === 1);
-import styles from "@/components/elements/ImageSlider.module.css"
+import { PictureData } from "@/constants/PicData";
+const images = PictureData.filter((item) => item.Asli === 1);
+import styles from "@/components/elements/ImageSlider.module.css";
 export default function ImageSlider() {
   const settings = {
     // dots: true,  نقاط پایین اسلایدر
@@ -13,13 +13,11 @@ export default function ImageSlider() {
     slidesToScroll: 1, // حرکت یک اسلاید در هر بار
     autoplay: true, // پخش خودکار
     autoplaySpeed: 3000, // هر ۳ ثانیه یکبار
-};
-
- 
+  };
 
   return (
     <div className={styles.sliderContainer}>
-      <div    className={styles.slider}>
+      <div className={styles.slider}>
         <Slider {...settings}>
           {images.map((src, i) => (
             <div key={i} className={styles.slide}>
@@ -33,18 +31,17 @@ export default function ImageSlider() {
               />
               <div className={styles.wave}>
                 <Image
-                  src="/images/projects/wave.jpg"
+                  src="/images/projects/wave.png"
                   alt="wave"
                   fill
                   sizes="100vw"
                   style={{ objectFit: "cover" }}
                 />
               </div>
-              <div className={styles.slideTitle} >{src.name}</div>
+              <div className={styles.slideTitle}>{src.name}</div>
             </div>
           ))}
         </Slider>
-       
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Index({picproj,projName}) {
       const [pic, setPic] = useState(picproj);
   return (
    <div>
-    <h3>{projName}</h3>
+    <h3> عکس های پروژه {projName}</h3>
      <div className={styles.pictureProj}>
         {pic.map((pict) => (
           <div key={pict.id}>
