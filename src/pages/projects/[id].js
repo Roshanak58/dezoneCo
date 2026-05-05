@@ -61,7 +61,13 @@ function Index({ servProject, picproj, processproj, numPic, id }) {
         </div>
 
         {/* <div className={styles.processStep}> */}
-        {project?.id === "10" ? <h3>مشخصات طرح:</h3> : <h3>مراحل فرایند:</h3>}
+        {project?.id === "10" ? (
+          <h3>مشخصات طرح:</h3>
+        ) : project.id === "32" ? (
+          <h3>اجراء پروژه:</h3>
+        ) : (
+          <h3>مراحل فرایند:</h3>
+        )}
 
         <div className={styles.flexContainer}>
           {processStep.map((procS) => (
@@ -74,33 +80,33 @@ function Index({ servProject, picproj, processproj, numPic, id }) {
         {/* </div> */}
       </div>
       <div className={styles.ProjIdDiv}>
-      <div className={styles.pictureProj}>
-        {pic.map((pict) => (
-          <div key={pict.id}>
-            {/* <img src={pict.pic} alt="image" /> */}
-            <Image
-              className={styles.imgBorder}
-              src={pict.pic}
-              alt="Logo"
-              width={400}
-              height={300}
-            />
-          </div>
-        ))}
-      </div>
-      <div className={styles.colorLink}>
-        {numPic > 4 ? (
-          <Link
-            href={{
-              pathname: `/projects/pictureP/${id}`,
-            }}
-          >
-            مشاهده عکس های بیشتر...
-          </Link>
-        ) : (
-          <p></p>
-        )}
-      </div>
+        <div className={styles.pictureProj}>
+          {pic.map((pict) => (
+            <div key={pict.id}>
+              {/* <img src={pict.pic} alt="image" /> */}
+              <Image
+                className={styles.imgBorder}
+                src={pict.pic}
+                alt="Logo"
+                width={400}
+                height={300}
+              />
+            </div>
+          ))}
+        </div>
+        <div className={styles.colorLink}>
+          {numPic > 4 ? (
+            <Link
+              href={{
+                pathname: `/projects/pictureP/${id}`,
+              }}
+            >
+              مشاهده عکس های بیشتر...
+            </Link>
+          ) : (
+            <p></p>
+          )}
+        </div>
       </div>
     </div>
   );

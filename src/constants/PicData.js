@@ -2204,5 +2204,26 @@ const PictureData = [
     pic: "/images/projects/Mianeh3.jpeg",
     Asli: 0,
   },
+  {
+    id: "316",
+    idProj: "32",
+    name: " آبگیر شناور طرح آبرسانی به شهر جهرم از سد سلمان فارسی ",
+    pic: "/images/projects/jahrom1.jpg",
+    Asli: 0,
+  },
+  {
+    id: "317",
+    idProj: "32",
+    name: " آبگیر شناور طرح آبرسانی به شهر جهرم از سد سلمان فارسی ",
+    pic: "/images/projects/jahrom2.jpg",
+    Asli: 1,
+  },
+  {
+    id: "318",
+    idProj: "32",
+    name: " آبگیر شناور طرح آبرسانی به شهر جهرم از سد سلمان فارسی ",
+    pic: "/images/projects/jahrom3.jpg",
+    Asli: 0,
+  },
 ];
 export { PictureData };
