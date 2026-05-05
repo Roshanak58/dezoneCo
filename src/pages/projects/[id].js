@@ -65,6 +65,8 @@ function Index({ servProject, picproj, processproj, numPic, id }) {
           <h3>مشخصات طرح:</h3>
         ) : project.id === "32" ? (
           <h3>اجراء پروژه:</h3>
+        ) : project.id === "27" ? (
+          <h3> </h3>
         ) : (
           <h3>مراحل فرایند:</h3>
         )}
