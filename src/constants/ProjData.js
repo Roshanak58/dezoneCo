@@ -392,7 +392,7 @@ const ProjData = [
   {
     id: "31",
     name: " تصفیه خانه فاضلاب ملایر",
-    employer: "شرکت آب و فاضلاب مازندران",
+    employer: "شرکت آب  فاضلاب استان همدان  ",
     consultant: "شرکت مهندسین مشاور ری آب ",
     contractor: "شرکت مهندسی دزون",
     typeOfContract: " PC",
